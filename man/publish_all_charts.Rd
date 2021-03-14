@@ -4,7 +4,10 @@
 \alias{publish_all_charts}
 \title{Exports all charts}
 \usage{
-publish_all_charts()
+publish_all_charts(path = "out/")
+}
+\arguments{
+\item{path}{Path to the storage directory}
 }
 \description{
 Exports all charts

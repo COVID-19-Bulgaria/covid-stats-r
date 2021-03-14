@@ -84,14 +84,15 @@ common_chart_theme <- function() {
 #' @param plot The plot to be exported
 #' @param name Name of the exported image file
 #' @param ext Image file extension
+#' @param path Path to the storage directory
 #' @param width Width of the exported image
 #' @param height Height of the exported image
 #'
 #' @export
-export <- function(plot, name, ext = ".svg", width = 16, height = 9) {
+export <- function(plot, name, ext = ".svg", path = "out/", width = 16, height = 9) {
   message(paste0("Start exporting plot ", name, ext, "..."))
   ggplot2::ggsave(
-    file = paste0("out/", name, ext),
+    file = paste0(path, name, ext),
     plot = plot,
     width = width,
     height = height

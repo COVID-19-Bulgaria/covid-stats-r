@@ -4,7 +4,7 @@
 \alias{export}
 \title{Exports a plot as an image.}
 \usage{
-export(plot, name, ext = ".svg", width = 16, height = 9)
+export(plot, name, ext = ".svg", path = "out/", width = 16, height = 9)
 }
 \arguments{
 \item{plot}{The plot to be exported}
@@ -12,6 +12,8 @@ export(plot, name, ext = ".svg", width = 16, height = 9)
 \item{name}{Name of the exported image file}
 
 \item{ext}{Image file extension}
+
+\item{path}{Path to the storage directory}
 
 \item{width}{Width of the exported image}
 
